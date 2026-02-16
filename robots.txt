@@ -1,0 +1,12 @@
+# robots.txt for TreatAll Website
+# Allows all search engines to crawl and index the site
+
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://yourusername.github.io/treatall-website/sitemap.xml
+
+# Instructions:
+# Replace "yourusername" and "treatall-website" with your actual GitHub username and repository name
+# OR replace entire URL with your custom domain if using one (e.g., https://www.treatall.in/sitemap.xml)
