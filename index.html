@@ -1,0 +1,1493 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TreatAll - Professional Elderly Care in Delhi NCR | NSDC Certified</title>
+    <meta name="description" content="Professional elderly care services in Delhi NCR. NSDC-certified attendants, 24/7 support, real-time monitoring. Trusted by 100+ families. Email treatallindia@gmail.com">
+    <meta name="keywords" content="elderly care Delhi, senior care NCR, NSDC certified attendant, home care Noida, Gurgaon elderly care">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary-blue: #4A90E2;
+            --warm-orange: #ff6b35;
+            --soft-green: #25D366;
+            --dark-gray: #0d0c22;
+            --light-gray: #f8f8f8;
+            --white: #FFFFFF;
+            --color-gray-50: hsl(0 0% 97.5%);
+            --color-gray-100: hsl(240 4.8% 95.9%);
+            --color-gray-200: hsl(240 5.9% 90%);
+            --color-gray-300: hsl(240 4.9% 83.9%);
+            --color-gray-400: hsl(240 5% 64.9%);
+            --color-gray-500: hsl(240 3.8% 46.1%);
+            --color-gray-600: hsl(240 5.2% 33.9%);
+            --border-radius-sm: 6px;
+            --border-radius-md: 8px;
+            --border-radius-lg: 12px;
+            --border-radius-xl: 16px;
+            --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.08);
+            --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.1);
+            --shadow-lg: 0 10px 30px rgba(0, 0, 0, 0.12);
+            --shadow-xl: 0 20px 50px rgba(0, 0, 0, 0.15);
+            --shadow-2xl: 0 25px 60px rgba(0, 0, 0, 0.18);
+            --transition-base: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            --transition-fast: all 0.15s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        html {
+            height: 100%;
+            -webkit-font-smoothing: antialiased;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 1.75;
+            color: var(--dark-gray);
+        }
+
+        /* ===== HEADER ===== */
+        header {
+            position: sticky;
+            top: 0;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border-bottom: 1px solid var(--color-gray-100);
+            z-index: 9996;
+            box-shadow: 0 1px 20px rgba(0, 0, 0, 0.06);
+        }
+
+        nav {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 1rem 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 1rem;
+        }
+
+        .logo {
+            font-size: 1.75rem;
+            font-weight: 800;
+            background: linear-gradient(135deg, var(--primary-blue), var(--warm-orange));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            letter-spacing: -0.03em;
+            white-space: nowrap;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 2.5rem;
+            align-items: center;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: var(--dark-gray);
+            font-weight: 500;
+            font-size: 0.95rem;
+            transition: var(--transition-fast);
+            position: relative;
+        }
+
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: -4px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--primary-blue);
+            transition: width 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: var(--primary-blue);
+        }
+
+        .nav-links a:hover::after {
+            width: 100%;
+        }
+
+        .cta-button {
+            background: #1a73e8;
+            color: var(--white);
+            padding: 0.75rem 1.75rem;
+            border-radius: var(--border-radius-lg);
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.95rem;
+            letter-spacing: -0.01em;
+            transition: var(--transition-base);
+            border: none;
+            cursor: pointer;
+            box-shadow: 0 2px 8px rgba(26, 115, 232, 0.3);
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .cta-button:hover {
+            background: #1557b0;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 16px rgba(26, 115, 232, 0.4);
+        }
+
+        .cta-button:active {
+            transform: translateY(0);
+        }
+
+        /* ===== HERO ===== */
+        .hero {
+            background: linear-gradient(135deg, #4A90E2 0%, #357ABD 50%, #2868a8 100%);
+            position: relative;
+            color: var(--white);
+            padding: 6rem 1.5rem 5rem;
+            text-align: center;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background-image: 
+                radial-gradient(circle at 20% 50%, rgba(255,255,255,0.1) 0%, transparent 50%),
+                radial-gradient(circle at 80% 80%, rgba(255,255,255,0.08) 0%, transparent 50%),
+                radial-gradient(circle at 40% 20%, rgba(255,255,255,0.06) 0%, transparent 50%);
+            animation: particleFloat 20s ease-in-out infinite;
+        }
+
+        @keyframes particleFloat {
+            0%, 100% { transform: translateY(0) scale(1); }
+            50% { transform: translateY(-20px) scale(1.05); }
+        }
+
+        .hero-content {
+            max-width: 1100px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 1;
+        }
+
+        .hero h1 {
+            font-size: clamp(2rem, 5vw, 3.75rem);
+            font-weight: 800;
+            margin-bottom: 1.5rem;
+            line-height: 1.15;
+            letter-spacing: -0.04em;
+            text-shadow: 0 2px 40px rgba(0,0,0,0.2);
+            animation: fadeInUp 0.8s ease-out;
+            word-wrap: break-word;
+        }
+
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .hero p {
+            font-size: clamp(1rem, 3vw, 1.3rem);
+            margin-bottom: 2.5rem;
+            opacity: 0.97;
+            font-weight: 400;
+            line-height: 1.65;
+            max-width: 920px;
+            margin-left: auto;
+            margin-right: auto;
+            animation: fadeInUp 0.8s ease-out 0.2s backwards;
+            word-wrap: break-word;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-bottom: 1rem;
+            animation: fadeInUp 0.8s ease-out 0.4s backwards;
+            padding: 0 1rem;
+        }
+
+        .hero-buttons .cta-button {
+            font-size: clamp(0.85rem, 2.5vw, 1rem);
+            padding: 1rem 1.5rem;
+            box-shadow: 0 4px 16px rgba(0,0,0,0.2);
+            font-weight: 600;
+        }
+
+        .btn-orange {
+            background: #ff6b35 !important;
+            color: var(--white) !important;
+            box-shadow: 0 4px 16px rgba(255,107,53,0.3) !important;
+        }
+
+        .btn-orange:hover {
+            background: #e55a2b !important;
+            transform: translateY(-3px) !important;
+        }
+
+        .btn-white {
+            background: var(--white) !important;
+            color: var(--primary-blue) !important;
+            box-shadow: 0 4px 16px rgba(0,0,0,0.15) !important;
+        }
+
+        .btn-white:hover {
+            background: #f5f5f5 !important;
+            transform: translateY(-3px) !important;
+        }
+
+        .btn-green {
+            background: #25D366 !important;
+            color: var(--white) !important;
+            box-shadow: 0 4px 16px rgba(37,211,102,0.3) !important;
+        }
+
+        .btn-green:hover {
+            background: #1faa52 !important;
+            transform: translateY(-3px) !important;
+        }
+
+        .trust-banner {
+            background: rgba(255,255,255,0.13);
+            backdrop-filter: blur(12px);
+            padding: 2.25rem 2rem;
+            border-radius: var(--border-radius-xl);
+            margin-top: 4.5rem;
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 2.5rem;
+            border: 1px solid rgba(255,255,255,0.2);
+            box-shadow: 0 8px 32px rgba(0,0,0,0.12), inset 0 1px 0 rgba(255,255,255,0.2);
+            animation: fadeInUp 0.8s ease-out 0.6s backwards;
+        }
+
+        .trust-item {
+            display: flex;
+            align-items: center;
+            gap: 0.875rem;
+            font-weight: 600;
+            font-size: 0.95rem;
+            transition: var(--transition-fast);
+        }
+
+        .trust-item:hover { transform: translateY(-3px); }
+
+        .trust-item span:first-child {
+            font-size: 2rem;
+        }
+
+        /* ===== SECTIONS ===== */
+        section {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 6rem 2rem;
+        }
+
+        h2 {
+            font-size: 2.75rem;
+            font-weight: 800;
+            text-align: center;
+            color: var(--dark-gray);
+            margin-bottom: 1rem;
+            letter-spacing: -0.03em;
+            line-height: 1.2;
+        }
+
+        h2::after {
+            content: '';
+            display: block;
+            width: 60px;
+            height: 4px;
+            background: linear-gradient(90deg, var(--primary-blue), var(--warm-orange));
+            margin: 1.5rem auto 3rem;
+            border-radius: 2px;
+        }
+
+        /* ===== VALUE CARDS ===== */
+        .value-props {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+        }
+
+        .value-card {
+            background: var(--white);
+            padding: 2.75rem;
+            border-radius: var(--border-radius-xl);
+            box-shadow: var(--shadow-sm);
+            transition: var(--transition-base);
+            border: 1px solid var(--color-gray-100);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .value-card::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, var(--primary-blue), var(--warm-orange), var(--soft-green));
+            transform: scaleX(0);
+            transform-origin: left;
+            transition: transform 0.6s ease;
+        }
+
+        .value-card:hover {
+            transform: translateY(-10px);
+            box-shadow: var(--shadow-2xl);
+        }
+
+        .value-card:hover::before { transform: scaleX(1); }
+
+        .value-icon {
+            font-size: 3.5rem;
+            margin-bottom: 1.75rem;
+            line-height: 1;
+            display: inline-block;
+            transition: var(--transition-base);
+        }
+
+        .value-card:hover .value-icon { transform: scale(1.1) rotate(5deg); }
+
+        .value-card h3 {
+            color: var(--dark-gray);
+            margin-bottom: 1.25rem;
+            font-size: 1.5rem;
+            font-weight: 700;
+            letter-spacing: -0.02em;
+        }
+
+        .value-card p {
+            color: var(--color-gray-600);
+            line-height: 1.75;
+            font-size: 0.95rem;
+        }
+
+        /* ===== SERVICES ===== */
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2.25rem;
+        }
+
+        .service-card {
+            background: var(--white);
+            padding: 2.75rem;
+            border-radius: var(--border-radius-xl);
+            border: 2px solid var(--color-gray-100);
+            transition: var(--transition-base);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .service-card::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0;
+            width: 6px;
+            height: 100%;
+            background: linear-gradient(180deg, var(--primary-blue), var(--warm-orange));
+            transform: scaleY(0);
+            transform-origin: top;
+            transition: transform 0.5s ease;
+        }
+
+        .service-card.featured::after {
+            content: 'POPULAR';
+            position: absolute;
+            top: 20px; right: -35px;
+            background: var(--warm-orange);
+            color: var(--white);
+            padding: 5px 40px;
+            font-size: 0.7rem;
+            font-weight: 700;
+            letter-spacing: 0.05em;
+            transform: rotate(45deg);
+        }
+
+        .service-card:hover {
+            box-shadow: var(--shadow-2xl);
+            border-color: var(--primary-blue);
+            transform: translateY(-8px);
+        }
+
+        .service-card:hover::before { transform: scaleY(1); }
+
+        .service-card h3 {
+            color: var(--dark-gray);
+            font-size: 1.6rem;
+            font-weight: 700;
+            margin-bottom: 1.25rem;
+            letter-spacing: -0.02em;
+        }
+
+        .price {
+            font-size: 2.75rem;
+            color: var(--warm-orange);
+            font-weight: 800;
+            margin: 1.5rem 0;
+            letter-spacing: -0.03em;
+            line-height: 1;
+        }
+
+        .service-card > p {
+            color: var(--color-gray-500);
+            font-size: 0.9rem;
+            font-weight: 500;
+            margin-bottom: 1rem;
+        }
+
+        .features-list {
+            list-style: none;
+            margin: 1.75rem 0;
+        }
+
+        .features-list li {
+            padding: 0.875rem 0;
+            padding-left: 2.25rem;
+            position: relative;
+            color: var(--color-gray-600);
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+
+        .features-list li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: var(--soft-green);
+            font-weight: bold;
+            font-size: 1.2rem;
+            top: 0.75rem;
+        }
+
+        .best-for {
+            background: linear-gradient(135deg, rgba(74,144,226,0.08), rgba(74,144,226,0.04));
+            padding: 1.25rem;
+            border-radius: var(--border-radius-md);
+            margin-top: 1.5rem;
+            font-style: italic;
+            color: var(--primary-blue);
+            font-size: 0.9rem;
+            border-left: 3px solid var(--primary-blue);
+            line-height: 1.6;
+        }
+
+        .best-for strong {
+            font-weight: 700;
+            color: var(--dark-gray);
+        }
+
+        .service-card .cta-button {
+            width: 100%;
+            justify-content: center;
+            margin-top: 1.75rem;
+            font-weight: 700;
+        }
+
+        /* ===== HOW IT WORKS ===== */
+        .process-steps {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2.5rem;
+            margin-top: 2rem;
+        }
+
+        .step {
+            text-align: center;
+            padding: 2rem;
+        }
+
+        .step-number {
+            width: 70px;
+            height: 70px;
+            background: linear-gradient(135deg, var(--primary-blue), #357ABD);
+            color: var(--white);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.75rem;
+            font-weight: 800;
+            margin: 0 auto 1.5rem;
+            box-shadow: 0 8px 24px rgba(74,144,226,0.3);
+            transition: var(--transition-base);
+        }
+
+        .step:hover .step-number {
+            transform: scale(1.1) rotate(5deg);
+        }
+
+        .step h3 {
+            color: var(--dark-gray);
+            margin-bottom: 1rem;
+            font-weight: 700;
+            font-size: 1.25rem;
+        }
+
+        .step p {
+            color: var(--color-gray-600);
+            line-height: 1.7;
+            font-size: 0.95rem;
+        }
+
+        /* ===== STATS ===== */
+        .stats {
+            background: linear-gradient(135deg, var(--primary-blue) 0%, #357ABD 50%, #2868a8 100%) !important;
+            max-width: 100% !important;
+            color: var(--white);
+            text-align: center;
+            padding: 6rem 2rem !important;
+        }
+
+        .stats h2 { color: var(--white); }
+
+        .stats h2::after {
+            background: linear-gradient(90deg, var(--warm-orange), var(--soft-green));
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 3rem;
+            max-width: 1280px;
+            margin: 0 auto;
+        }
+
+        .stat-item {
+            padding: 2rem;
+            transition: var(--transition-base);
+        }
+
+        .stat-item:hover { transform: scale(1.05); }
+
+        .stat-number {
+            font-size: 4rem;
+            font-weight: 800;
+            margin-bottom: 0.5rem;
+            letter-spacing: -0.03em;
+        }
+
+        .stat-label {
+            font-size: 1.1rem;
+            opacity: 0.95;
+            font-weight: 500;
+        }
+
+        /* ===== TESTIMONIALS ===== */
+        .testimonials {
+            background: linear-gradient(180deg, var(--color-gray-50) 0%, var(--white) 100%) !important;
+            max-width: 100% !important;
+            padding: 6rem 2rem !important;
+        }
+
+        .testimonials-inner {
+            max-width: 1280px;
+            margin: 0 auto;
+        }
+
+        .testimonial-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 2rem;
+        }
+
+        .testimonial {
+            background: var(--white);
+            padding: 2.5rem;
+            border-radius: var(--border-radius-xl);
+            box-shadow: var(--shadow-md);
+            transition: var(--transition-base);
+            border: 1px solid var(--color-gray-100);
+            position: relative;
+        }
+
+        .testimonial::before {
+            content: '"';
+            position: absolute;
+            top: -20px; left: 20px;
+            font-size: 120px;
+            color: rgba(74,144,226,0.08);
+            font-family: Georgia, serif;
+            line-height: 1;
+        }
+
+        .testimonial:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-xl);
+            border-color: var(--primary-blue);
+        }
+
+        .stars {
+            color: var(--warm-orange);
+            font-size: 1.25rem;
+            margin-bottom: 1.5rem;
+            letter-spacing: 0.2rem;
+        }
+
+        .testimonial-text {
+            font-style: italic;
+            margin-bottom: 1.5rem;
+            line-height: 1.8;
+            color: var(--color-gray-600);
+            font-size: 1rem;
+            position: relative;
+            z-index: 1;
+        }
+
+        .testimonial-author {
+            font-weight: 700;
+            color: var(--dark-gray);
+            font-size: 1.05rem;
+        }
+
+        /* ===== AREAS ===== */
+        .areas-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .area-card {
+            background: var(--white);
+            padding: 2rem;
+            border-radius: var(--border-radius-lg);
+            text-align: center;
+            border: 2px solid var(--color-gray-100);
+            transition: var(--transition-base);
+            box-shadow: var(--shadow-sm);
+        }
+
+        .area-card:hover {
+            border-color: var(--primary-blue);
+            box-shadow: var(--shadow-md);
+            transform: translateY(-3px);
+        }
+
+        .area-icon { font-size: 2.5rem; margin-bottom: 1rem; }
+
+        .area-card h3 {
+            font-weight: 700;
+            color: var(--dark-gray);
+            margin-bottom: 0.25rem;
+            font-size: 1.25rem;
+        }
+
+        .area-card p { color: var(--color-gray-600); font-size: 0.9rem; }
+
+        /* ===== CONTACT ===== */
+        .contact {
+            background: linear-gradient(180deg, var(--white) 0%, var(--color-gray-50) 100%) !important;
+            max-width: 100% !important;
+            padding: 6rem 2rem !important;
+        }
+
+        .contact-inner {
+            max-width: 1280px;
+            margin: 0 auto;
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+
+        .contact-card {
+            background: var(--white);
+            padding: 3rem 2rem;
+            border-radius: var(--border-radius-xl);
+            text-align: center;
+            box-shadow: var(--shadow-md);
+            border: 1px solid var(--color-gray-100);
+            transition: var(--transition-base);
+        }
+
+        .contact-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-xl);
+            border-color: var(--primary-blue);
+        }
+
+        .contact-icon { font-size: 3.5rem; margin-bottom: 1.5rem; }
+
+        .contact-card h3 {
+            color: var(--dark-gray);
+            margin-bottom: 1rem;
+            font-weight: 700;
+            font-size: 1.25rem;
+        }
+
+        .contact-card a {
+            color: var(--primary-blue);
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.2rem;
+            transition: var(--transition-fast);
+            word-break: break-all;
+        }
+
+        .contact-card a:hover { color: var(--warm-orange); }
+
+        .contact-card p {
+            margin-top: 1rem;
+            color: var(--color-gray-600);
+            font-size: 0.95rem;
+        }
+
+        /* ===== CONTACT FORM ===== */
+        .contact-form-container {
+            background: var(--white);
+            border-radius: var(--border-radius-xl);
+            padding: 3rem;
+            box-shadow: var(--shadow-lg);
+            border: 1px solid var(--color-gray-100);
+            margin-bottom: 3rem;
+            max-width: 900px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .contact-form-container h3 {
+            font-size: 1.75rem;
+            font-weight: 700;
+            color: var(--dark-gray);
+            margin-bottom: 0.5rem;
+            text-align: center;
+        }
+
+        .form-subtitle {
+            text-align: center;
+            color: var(--color-gray-600);
+            margin-bottom: 2.5rem;
+            font-size: 1rem;
+        }
+
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem;
+        }
+
+        .form-group {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+
+        .form-group label {
+            font-weight: 600;
+            color: var(--dark-gray);
+            font-size: 0.9rem;
+        }
+
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            padding: 0.875rem 1rem;
+            border: 2px solid var(--color-gray-200);
+            border-radius: var(--border-radius-md);
+            font-family: inherit;
+            font-size: 0.95rem;
+            color: var(--dark-gray);
+            background: var(--white);
+            transition: border-color 0.2s ease, box-shadow 0.2s ease;
+            outline: none;
+            width: 100%;
+        }
+
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+            border-color: var(--primary-blue);
+            box-shadow: 0 0 0 3px rgba(74,144,226,0.12);
+        }
+
+        .form-group textarea { resize: vertical; min-height: 120px; }
+
+        .checkbox-group {
+            flex-direction: row;
+            align-items: center;
+        }
+
+        .checkbox-label {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            cursor: pointer;
+            font-weight: 500;
+            color: var(--dark-gray);
+            font-size: 0.95rem;
+        }
+
+        .checkbox-label input[type="checkbox"] {
+            width: 18px;
+            height: 18px;
+            cursor: pointer;
+            accent-color: var(--primary-blue);
+        }
+
+        .submit-button {
+            width: 100%;
+            justify-content: center;
+            padding: 1.1rem;
+            font-size: 1.1rem;
+            background: #ff6b35;
+            box-shadow: 0 4px 16px rgba(255,107,53,0.3);
+        }
+
+        .submit-button:hover {
+            background: #e55a2b;
+            box-shadow: 0 6px 24px rgba(255,107,53,0.4);
+        }
+
+        .form-footer {
+            text-align: center;
+            color: var(--color-gray-500);
+            font-size: 0.875rem;
+            margin-top: 0.5rem;
+        }
+
+        .form-success {
+            display: none;
+            background: linear-gradient(135deg, #d4edda, #c3e6cb);
+            color: #155724;
+            padding: 1.5rem;
+            border-radius: var(--border-radius-md);
+            margin-bottom: 1.5rem;
+            text-align: center;
+            font-weight: 600;
+            font-size: 1.05rem;
+            border: 1px solid #c3e6cb;
+        }
+
+        /* ===== FOOTER ===== */
+        footer {
+            background: var(--dark-gray);
+            color: rgba(255,255,255,0.8);
+            padding: 4rem 2rem 2rem;
+            text-align: center;
+        }
+
+        .footer-content {
+            max-width: 1280px;
+            margin: 0 auto;
+        }
+
+        .footer-content h3 {
+            color: var(--white);
+            font-weight: 700;
+            font-size: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .footer-content p {
+            margin: 0.75rem 0;
+            line-height: 1.8;
+        }
+
+        .footer-email {
+            color: #7dd3fc;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: var(--transition-fast);
+        }
+
+        .footer-email:hover {
+            color: #38bdf8;
+            text-decoration: underline;
+        }
+
+        /* ===== FLOATING BUTTON ===== */
+        .email-float {
+            position: fixed;
+            bottom: 24px;
+            right: 24px;
+            background: #1a73e8;
+            color: var(--white);
+            width: 64px;
+            height: 64px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.75rem;
+            box-shadow: 0 8px 24px rgba(26,115,232,0.4);
+            cursor: pointer;
+            z-index: 1999;
+            transition: var(--transition-base);
+            border: 3px solid var(--white);
+            text-decoration: none;
+        }
+
+        .email-float:hover {
+            transform: scale(1.1);
+            box-shadow: 0 12px 32px rgba(26,115,232,0.5);
+        }
+
+        /* ===== RESPONSIVE ===== */
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2rem; }
+            .hero p { font-size: 1rem; }
+            h2 { font-size: 1.75rem; }
+            
+            .nav-links { display: none; }
+            nav { padding: 1rem 1.5rem; }
+            .logo { font-size: 1.5rem; }
+            
+            .trust-banner {
+                flex-direction: column;
+                gap: 1.5rem;
+                padding: 1.5rem;
+            }
+
+            section { padding: 4rem 1.5rem; }
+
+            .value-props,
+            .services-grid,
+            .process-steps,
+            .testimonial-grid,
+            .areas-grid,
+            .contact-grid { grid-template-columns: 1fr; }
+
+            .stats-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 2rem;
+            }
+
+            .stat-number { font-size: 3rem; }
+
+            .hero-buttons {
+                flex-direction: column;
+                width: 100%;
+                max-width: 360px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .hero-buttons .cta-button {
+                width: 100%;
+                justify-content: center;
+            }
+
+            .form-row { grid-template-columns: 1fr; }
+
+            .contact-form-container { padding: 1.75rem 1.25rem; }
+
+            .email-float { bottom: 16px; right: 16px; width: 56px; height: 56px; font-size: 1.5rem; }
+        }
+
+        @media (min-width: 769px) and (max-width: 1024px) {
+            .hero h1 { font-size: 3rem; }
+            h2 { font-size: 2.5rem; }
+            section { padding: 5rem 2rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Floating Email Button -->
+    <a href="mailto:treatallindia@gmail.com" class="email-float" title="Email Us">📧</a>
+
+    <!-- Header -->
+    <header>
+        <nav>
+            <div class="logo">TreatAll</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#how-it-works">How It Works</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <a href="mailto:treatallindia@gmail.com" class="cta-button">📧 Contact</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home" style="max-width:100%; padding-top: 6rem;">
+        <div class="hero-content">
+            <h1>Professional Elderly Care That Brings Peace of Mind</h1>
+            <p>NSDC-Certified Attendants • Real-Time Health Monitoring • 24/7 Emergency Support • Trusted by 100+ Families Across NCR</p>
+            <div class="hero-buttons">
+                <a href="#contact" class="cta-button btn-orange">🏥 Book FREE Assessment</a>
+                <a href="mailto:treatallindia@gmail.com" class="cta-button btn-white">📧 Email Us</a>
+                <a href="#contact" class="cta-button btn-green">💬 Get in Touch</a>
+            </div>
+
+            <div class="trust-banner">
+                <div class="trust-item">
+                    <span>🏆</span>
+                    <span>NSDC Certified</span>
+                </div>
+                <div class="trust-item">
+                    <span>✅</span>
+                    <span>Police Verified Staff</span>
+                </div>
+                <div class="trust-item">
+                    <span>💯</span>
+                    <span>98% Satisfaction</span>
+                </div>
+                <div class="trust-item">
+                    <span>🏥</span>
+                    <span>Medical Grade Care</span>
+                </div>
+                <div class="trust-item">
+                    <span>🛡️</span>
+                    <span>Insured & Verified</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why TreatAll -->
+    <section>
+        <h2>Why Leading Families Choose TreatAll</h2>
+        <div class="value-props">
+            <div class="value-card">
+                <div class="value-icon">🎓</div>
+                <h3>Medical-Grade Training</h3>
+                <p>Our attendants complete 200+ hours of NSDC-certified training covering medical monitoring, medication administration, physiotherapy, and emergency response. Every attendant is police-verified, health-screened, and continuously evaluated.</p>
+            </div>
+            <div class="value-card">
+                <div class="value-icon">📱</div>
+                <h3>Technology-Enabled Transparency</h3>
+                <p>Track vitals, daily activities, and medication schedules in real-time through our family app. Receive instant alerts for any concerns. Complete visibility into your loved one's care, anytime, anywhere.</p>
+            </div>
+            <div class="value-card">
+                <div class="value-icon">🚨</div>
+                <h3>24/7 Emergency Support</h3>
+                <p>Round-the-clock helpline staffed by senior care coordinators. Direct escalation protocols with partner hospitals. Average emergency response time: Under 15 minutes. Because health emergencies don't wait.</p>
+            </div>
+            <div class="value-card">
+                <div class="value-icon">💰</div>
+                <h3>Flexible & Transparent Pricing</h3>
+                <p>No hidden fees. No long-term contracts. Cancel anytime with 15-day notice. Packages from ₹18,000/month with daily and weekly options available. Discounts up to 12% on annual plans.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services -->
+    <section id="services" style="background: var(--light-gray); max-width:100%; padding:6rem 2rem;">
+        <div style="max-width:1280px; margin:0 auto;">
+            <h2>Our Service Packages</h2>
+            <p style="text-align:center; font-size:1.2rem; margin-bottom:3rem; color: var(--color-gray-600);">Compare & Choose the Right Care Level for Your Family</p>
+
+            <div class="services-grid">
+                <div class="service-card">
+                    <h3>Daily Care Package</h3>
+                    <div class="price">₹18,000<span style="font-size:1rem; font-weight:500; color:var(--color-gray-500);">/mo</span></div>
+                    <p>8 hours/day service</p>
+                    <ul class="features-list">
+                        <li>Personal care (bathing, grooming, feeding)</li>
+                        <li>Mobility assistance</li>
+                        <li>Companionship & light housekeeping</li>
+                        <li>Daily health check-ins</li>
+                    </ul>
+                    <div class="best-for">
+                        <strong>Best for:</strong> <span>Independent seniors needing daily assistance</span>
+                    </div>
+                    <a href="#contact" class="cta-button btn-orange">Book Now</a>
+                </div>
+
+                <div class="service-card featured">
+                    <h3>Weekly Companion Care</h3>
+                    <div class="price">₹25,000<span style="font-size:1rem; font-weight:500; color:var(--color-gray-500);">/mo</span></div>
+                    <p>8 hours/day service</p>
+                    <ul class="features-list">
+                        <li>All Daily Care services</li>
+                        <li>BP, SPO2, temperature monitoring</li>
+                        <li>Blood sugar checks</li>
+                        <li>Oral medication administration</li>
+                        <li>Health record maintenance</li>
+                    </ul>
+                    <div class="best-for">
+                        <strong>Best for:</strong> <span>Seniors with chronic conditions</span>
+                    </div>
+                    <a href="#contact" class="cta-button btn-orange">Book Now</a>
+                </div>
+
+                <div class="service-card">
+                    <h3>24/7 Intensive Care</h3>
+                    <div class="price">₹40,000<span style="font-size:1rem; font-weight:500; color:var(--color-gray-500);">/mo</span></div>
+                    <p>12 hours/day service</p>
+                    <ul class="features-list">
+                        <li>All Companion Care services</li>
+                        <li>Insulin injection administration</li>
+                        <li>Passive physiotherapy</li>
+                        <li>Range of motion exercises</li>
+                        <li>Night-time assistance</li>
+                    </ul>
+                    <div class="best-for">
+                        <strong>Best for:</strong> <span>Post-surgery or intensive care needs</span>
+                    </div>
+                    <a href="#contact" class="cta-button btn-orange">Book Now</a>
+                </div>
+
+                <div class="service-card">
+                    <h3>Live-in Care</h3>
+                    <div class="price">₹45,000<span style="font-size:1rem; font-weight:500; color:var(--color-gray-500);">/mo</span></div>
+                    <p>24-hour coverage</p>
+                    <ul class="features-list">
+                        <li>All 24/7 Intensive Care services</li>
+                        <li>Round-the-clock monitoring</li>
+                        <li>Emergency response</li>
+                        <li>Family app with live updates</li>
+                        <li>Weekly supervisor visits</li>
+                    </ul>
+                    <div class="best-for">
+                        <strong>Best for:</strong> <span>Seniors requiring full-time care</span>
+                    </div>
+                    <a href="#contact" class="cta-button btn-orange">Book Now</a>
+                </div>
+
+                <div class="service-card">
+                    <h3>Specialized Medical Care</h3>
+                    <div class="price">₹50,000<span style="font-size:1rem; font-weight:500; color:var(--color-gray-500);">/mo</span></div>
+                    <p>12 hours/day specialized service</p>
+                    <ul class="features-list">
+                        <li>Dementia/Alzheimer's care</li>
+                        <li>Stroke rehabilitation support</li>
+                        <li>Parkinson's disease care</li>
+                        <li>Post-operative care</li>
+                        <li>Specialist coordination</li>
+                    </ul>
+                    <div class="best-for">
+                        <strong>Best for:</strong> <span>Specialized medical conditions</span>
+                    </div>
+                    <a href="#contact" class="cta-button btn-orange">Book Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section id="how-it-works">
+        <h2>How TreatAll Works — Simple 6-Step Process</h2>
+        <div class="process-steps">
+            <div class="step">
+                <div class="step-number">1</div>
+                <h3>FREE Consultation</h3>
+                <p>Email or fill our contact form. Speak with a care coordinator within 2 hours. No pressure, no obligation.</p>
+            </div>
+            <div class="step">
+                <div class="step-number">2</div>
+                <h3>Home Assessment</h3>
+                <p>Senior care coordinator visits your home within 24–48 hours. Comprehensive needs evaluation and customized care plan.</p>
+            </div>
+            <div class="step">
+                <div class="step-number">3</div>
+                <h3>Attendant Matching</h3>
+                <p>We match you with 2–3 potential attendants. Review profiles, meet them, and choose the best fit for your family.</p>
+            </div>
+            <div class="step">
+                <div class="step-number">4</div>
+                <h3>Onboarding</h3>
+                <p>Supervisor present on first day. Home orientation, family app setup, emergency procedures established.</p>
+            </div>
+            <div class="step">
+                <div class="step-number">5</div>
+                <h3>Care Begins</h3>
+                <p>Attendant follows personalized care plan. Real-time updates via app. Regular supervisor check-ins.</p>
+            </div>
+            <div class="step">
+                <div class="step-number">6</div>
+                <h3>Quality Assurance</h3>
+                <p>Weekly supervisor visits. Monthly family reviews. 24/7 emergency helpline. Instant replacement if needed.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats -->
+    <section class="stats">
+        <h2>Trusted by Families Like Yours</h2>
+        <div class="stats-grid">
+            <div class="stat-item">
+                <div class="stat-number">100+</div>
+                <div class="stat-label">Families Served</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">98%</div>
+                <div class="stat-label">Satisfaction Rate</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">5000+</div>
+                <div class="stat-label">Care Hours Delivered</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">15 min</div>
+                <div class="stat-label">Avg Emergency Response</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+        <div class="testimonials-inner">
+            <h2>What Families Are Saying</h2>
+            <div class="testimonial-grid">
+                <div class="testimonial">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonial-text">"After Dad's stroke, TreatAll became our lifeline. The attendant is professional, caring, and the app lets us monitor everything from our office. Worth every rupee."</p>
+                    <p class="testimonial-author">— Priya Sharma, Noida</p>
+                    <p style="font-size:0.9rem; color:#666; margin-top:0.5rem;">Live-in Care, 8 months</p>
+                </div>
+                <div class="testimonial">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonial-text">"We tried two other services before TreatAll. The difference is night and day. Their attendants are actually trained professionals. Mom's health has visibly improved."</p>
+                    <p class="testimonial-author">— Rajesh Kumar, Delhi</p>
+                    <p style="font-size:0.9rem; color:#666; margin-top:0.5rem;">Medical Monitoring, 6 months</p>
+                </div>
+                <div class="testimonial">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonial-text">"The 24/7 emergency support saved my father's life when he had a diabetic emergency at 2 AM. The attendant knew exactly what to do and the supervisor was on call immediately."</p>
+                    <p class="testimonial-author">— Anjali Verma, Gurgaon</p>
+                    <p style="font-size:0.9rem; color:#666; margin-top:0.5rem;">Advanced Care, 1 year</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Areas -->
+    <section>
+        <h2>Serving the Entire NCR Region</h2>
+        <p style="text-align:center; font-size:1.2rem; margin-bottom:2rem; color:var(--color-gray-600);">Professional elderly care at your doorstep across:</p>
+        <div class="areas-grid">
+            <div class="area-card">
+                <div class="area-icon">📍</div>
+                <h3>Delhi</h3>
+                <p>All areas covered</p>
+            </div>
+            <div class="area-card">
+                <div class="area-icon">📍</div>
+                <h3>Noida</h3>
+                <p>All sectors</p>
+            </div>
+            <div class="area-card">
+                <div class="area-icon">📍</div>
+                <h3>Gurgaon</h3>
+                <p>All sectors</p>
+            </div>
+            <div class="area-card">
+                <div class="area-icon">📍</div>
+                <h3>Faridabad</h3>
+                <p>All sectors</p>
+            </div>
+            <div class="area-card">
+                <div class="area-icon">📍</div>
+                <h3>Ghaziabad</h3>
+                <p>All areas</p>
+            </div>
+        </div>
+        <p style="text-align:center; margin-top:2rem; font-size:1.1rem; color:var(--color-gray-600);">Don't see your area? Email us — we're expanding rapidly!</p>
+    </section>
+
+    <!-- Contact -->
+    <section class="contact" id="contact">
+        <div class="contact-inner">
+            <h2>Ready to Get Started?</h2>
+            <p style="text-align:center; font-size:1.3rem; margin-bottom:3rem; color:var(--color-gray-600);">Book Your FREE Home Assessment Today (Worth ₹2,000)</p>
+
+            <!-- Contact Form -->
+            <div class="contact-form-container">
+                <h3>📋 Book a FREE Home Assessment</h3>
+                <p class="form-subtitle">Fill out the form below and we'll get back to you within 2 hours</p>
+
+                <div id="formSuccess" class="form-success">
+                    ✅ Thank you! Your inquiry has been submitted successfully. We'll contact you within 2 hours (9 AM – 8 PM).
+                </div>
+
+                <form id="contactForm" class="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">Full Name *</label>
+                            <input type="text" id="name" name="name" required placeholder="Enter your full name">
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number *</label>
+                            <input type="tel" id="phone" name="phone" required placeholder="+91 XXXXX XXXXX">
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="_replyto" required placeholder="your@email.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="location">Location *</label>
+                            <select id="location" name="location" required>
+                                <option value="">Select your area</option>
+                                <option value="Delhi">Delhi</option>
+                                <option value="Noida">Noida</option>
+                                <option value="Faridabad">Faridabad</option>
+                                <option value="Gurgaon">Gurgaon</option>
+                                <option value="Ghaziabad">Ghaziabad</option>
+                                <option value="Other NCR">Other NCR Area</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="service">Service Required *</label>
+                        <select id="service" name="service" required>
+                            <option value="">Select service package</option>
+                            <option value="Daily Care Package">Daily Care Package (₹18,000/month)</option>
+                            <option value="Weekly Companion Care">Weekly Companion Care (₹25,000/month)</option>
+                            <option value="24/7 Intensive Care">24/7 Intensive Care (₹40,000/month)</option>
+                            <option value="Live-in Care">Live-in Care (₹45,000/month)</option>
+                            <option value="Specialized Medical Care">Specialized Medical Care (₹50,000/month)</option>
+                            <option value="Just Inquiring">Just Inquiring / Need Consultation</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Additional Details</label>
+                        <textarea id="message" name="message" rows="4" placeholder="Tell us about your requirements, health conditions, preferred timings, etc."></textarea>
+                    </div>
+
+                    <div class="form-group checkbox-group">
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="urgent" value="yes">
+                            <span>⚡ This is urgent — Please contact me ASAP</span>
+                        </label>
+                    </div>
+
+                    <input type="hidden" name="_subject" value="New TreatAll Inquiry - Elderly Care">
+                    <input type="hidden" name="_template" value="table">
+
+                    <button type="submit" class="cta-button submit-button">
+                        📩 Submit Inquiry — Free Assessment
+                    </button>
+
+                    <p class="form-footer">We typically respond within 2 hours during business hours (9 AM – 8 PM, 7 days a week)</p>
+                </form>
+            </div>
+
+            <div style="text-align:center; margin:3rem 0 2rem;">
+                <p style="font-size:1.2rem; font-weight:600; color:var(--dark-gray);">Or Contact Us Directly:</p>
+            </div>
+
+            <div class="contact-grid">
+                <div class="contact-card">
+                    <div class="contact-icon">📧</div>
+                    <h3>Email Us</h3>
+                    <a href="mailto:treatallindia@gmail.com">treatallindia@gmail.com</a>
+                    <p>Response within 24 hours</p>
+                </div>
+                <div class="contact-card">
+                    <div class="contact-icon">📍</div>
+                    <h3>Service Areas</h3>
+                    <p style="font-weight:600; color:var(--primary-blue); font-size:1.1rem;">Delhi NCR</p>
+                    <p>Delhi • Noida • Gurgaon • Faridabad • Ghaziabad</p>
+                </div>
+                <div class="contact-card">
+                    <div class="contact-icon">🏥</div>
+                    <h3>Book Assessment</h3>
+                    <a href="mailto:treatallindia@gmail.com?subject=Book%20FREE%20Home%20Assessment">treatallindia@gmail.com</a>
+                    <p>Free consultation available</p>
+                </div>
+            </div>
+
+            <div style="text-align:center; background:white; padding:2rem; border-radius:12px; box-shadow:0 5px 15px rgba(0,0,0,0.1); margin-top:2rem;">
+                <p style="font-size:1.1rem; margin-bottom:1rem; font-weight:500;">⏰ Available 9 AM – 8 PM, 7 Days a Week</p>
+                <p style="font-weight:bold; color:var(--primary-blue); font-size:1.2rem;">⚡ Average Response Time: Under 2 Hours</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <h3>TreatAll — Professional Elderly Care</h3>
+            <p>Serving Delhi, Noida, Faridabad, Gurgaon, and Ghaziabad</p>
+            <p style="margin-top:1.5rem;">
+                📧 <a href="mailto:treatallindia@gmail.com" class="footer-email">treatallindia@gmail.com</a>
+            </p>
+            <p style="margin-top:0.5rem; opacity:0.7;">⏰ Hours: 9 AM – 8 PM, 7 Days a Week</p>
+            <div style="margin-top:2rem; padding-top:2rem; border-top:1px solid rgba(255,255,255,0.1);">
+                <p style="font-size:0.85rem; opacity:0.6;">© 2025 TreatAll. All rights reserved.</p>
+                <p style="font-size:0.85rem; opacity:0.6; margin-top:0.5rem;">🏆 NSDC Certified • ✅ Police Verified Staff • 🛡️ Professional Indemnity Insured</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scroll for all anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    e.preventDefault();
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            });
+        });
+
+        // Contact Form Submission (Formspree AJAX)
+        const form = document.getElementById('contactForm');
+        const successMsg = document.getElementById('formSuccess');
+
+        if (form) {
+            form.addEventListener('submit', async function(e) {
+                e.preventDefault();
+
+                const submitBtn = form.querySelector('.submit-button');
+                submitBtn.textContent = '⏳ Sending...';
+                submitBtn.disabled = true;
+
+                try {
+                    const response = await fetch(form.action, {
+                        method: 'POST',
+                        body: new FormData(form),
+                        headers: { 'Accept': 'application/json' }
+                    });
+
+                    if (response.ok) {
+                        form.style.display = 'none';
+                        successMsg.style.display = 'block';
+                        successMsg.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                    } else {
+                        throw new Error('Form submission failed');
+                    }
+                } catch (error) {
+                    submitBtn.textContent = '📩 Submit Inquiry — Free Assessment';
+                    submitBtn.disabled = false;
+                    alert('There was an issue submitting the form. Please email us directly at treatallindia@gmail.com');
+                }
+            });
+        }
+    </script>
+
+</body>
+</html>
